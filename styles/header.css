@@ -1,0 +1,95 @@
+/* 页眉的盒子 */
+.top {
+    width: 1200px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo链接 */
+.logo {
+    display: inline-block;
+    margin-top: 0;
+}
+
+/* logo图片 */
+.logo img {
+    height: 150px;
+}
+
+/* 标题 */
+.top>h1 {
+    display: inline-block;
+    margin: 0 0 0 20px;
+    line-height: 50px;
+    font-family: 隶书;
+    text-shadow: 1px 1px 3px #fff;
+    font-size: 36px;
+}
+
+/* 中部盒子 */
+.inner1-top {
+    margin: 0;
+    order: 3;
+}
+
+/* 右浮动的盒子 */
+.inner2-top {
+    margin-top: 40px;
+}
+
+/* 中部盒子里的表单 */
+.inner1-top>form {
+    font-size: 0;
+}
+
+/* 表单控件 */
+.inner1-top>form>* {
+    font-size: 16px;
+    box-sizing: border-box;
+    height: 40px;
+    border: 1px solid #333;
+    vertical-align: top;
+    padding: 0 15px;
+}
+
+/* 搜索框 */
+.inner1-top>form>input:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left: none;
+}
+
+/* 按钮 */
+.inner1-top>form>input:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: none;
+}
+
+/* 按钮的鼠标悬停样式 */
+.inner1-top>form>input:last-child:hover {
+    opacity: 0.7;
+}
+
+/* 中央盒子里的热门搜索导航 */
+.inner1-top>nav {
+    color: #fff;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+/* 热门搜索导航里的所有链接 */
+.inner1-top>nav>a {
+    color: #fff;
+}
+
+/* 右浮动的盒子 */
+.inner2-top>p {
+    font-family: 仿宋;
+    font-size: 18px;
+    color: #fff;
+    line-height: 30px;
+}
+    

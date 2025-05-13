@@ -1,0 +1,7 @@
+/* grade seven up中按钮颜色 */
+.myButton{
+    color:black;
+}
+.myButton:hover{
+    color: #2390d9;
+}

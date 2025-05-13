@@ -1,0 +1,122 @@
+/* 主导航的盒子 */
+.nav-main {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 3px solid #fff
+}
+
+/* 主导航的盒子里所有的ul */
+.nav-main ul {
+    list-style-type: none;
+}
+
+/* 主导航里的盒子里所有的a */
+.nav-main a {
+    color: #000;
+    display: block;
+}
+
+/* 顶部菜单（外层ul） */
+.menu-top {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+/* 顶部菜单顶（外层li） */
+.menu-top>li {
+    float: left;
+    width: 150px;
+    text-align: center;
+    position: relative;
+}
+
+/* 顶部菜单链接 */
+.menu-top>li>a {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* 顶部菜单链接中当前活动项 */
+.menu-top>li>a.active {
+    background: #fff;
+}
+
+/* 顶部菜单链接的鼠标悬停样式 */
+.menu-top>li>a:hover {
+    background: #fff;
+}
+
+/* 下拉菜单（内层ul） */
+.menu-dropdown {
+    position: absolute;
+    left: 0;
+    top: 35px;
+    background: #fff;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: none;
+}
+
+/* 顶部菜单顶上鼠标悬停时显示下拉菜单 */
+.menu-top>li:hover .menu-dropdown {
+    display: block;
+}
+
+/* 下拉菜单链接（内层a）的鼠标悬停样式 */
+.menu-dropdown>li>a:hover {
+    background: #0263b2;
+}
+
+/* 隐藏移动端菜单按钮（PC端） */
+.menu-toggle {
+    display: none;
+}
+
+/* 响应式设计 - 移动端适配 */
+@media screen and (max-width: 1200px) {
+    /* 调整导航菜单 */
+    .nav-main {
+        height: auto;
+        padding: 0 10px;
+    }
+
+    .menu-top {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu-top>li {
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+
+    .menu-dropdown {
+        position: static;
+        display: none;
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    .menu-top>li:hover .menu-dropdown {
+        display: none;
+    }
+
+    /* 添加移动端菜单切换按钮 */
+    .menu-toggle {
+        display: block;
+        background: #0c95f0;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        margin: 0 -10px;
+    }
+
+    .menu-top.active {
+        display: block;
+    }
+}
+    
