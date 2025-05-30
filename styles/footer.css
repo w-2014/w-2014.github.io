@@ -1,0 +1,35 @@
+/* 页脚里第一个盒 */
+.bottom1 {
+    background: #1754a9;
+    border-top: 3px solid #15ebd9;
+}
+
+/* 第一个盒子的内层盒子 */
+.inner-bottom1 {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    line-height: 30px;
+}
+
+/* 友情链接a */
+.inner-bottom1>nav>a {
+    float: left;
+    width: 240px;
+    text-align: center;
+    color: #fff;
+}
+
+/* 友情链接的a的鼠标悬停样式 */
+.inner-bottom1>nav>a:hover {
+    color: #1bf53f;
+}
+
+/* 页脚里的第二个盒子 */
+.bottom2 {
+    padding: 40px 0;
+    line-height: 35px;
+    background: #104483;
+    text-align: center;
+}
+    

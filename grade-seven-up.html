@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/myButton.css">
+    <title>七年级上册</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f7f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 导航栏样式 */
+        nav {
+            background-color: #2390d9;
+            color: white;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space - around;
+        }
+
+        nav ul li {
+            margin-right: 30px;
+            cursor: pointer;
+        }
+
+        nav ul li a {
+            color: white;
+            /* 这里添加了对首页链接文字颜色的设置 */
+        }
+
+        /* 主体内容区域样式 */
+        main {
+            padding: 20px;
+        }
+
+        /* 资料卡片样式 */
+        .card {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(239, 237, 237, 0.1);
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">回到首页</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="card">
+            <h2><a href="Lessons(1-4).html" class="myButton">Lessons(1-4)</a></h2>
+        </div>
+        <div class="card">
+            <h2><a href="Lessons(5-8).html" class="myButton">Lessons(5-8)</a></h2>
+        </div>
+        <div class="card">
+            <h2><a href="Unit1.html" class="myButton">Unit1</h2>
+        </div>
+         <div class="card">
+            <h2><a href="Unit2.html" class="myButton">Unit2</h2>
+        </div>
+         <div class="card">
+            <h2><a href="Unit3.html" class="myButton">Unit3</h2>
+        </div>
+         <div class="card">
+            <h2><a href="Unit4.html" class="myButton">Unit4</h2>
+        </div>
+         <div class="card">
+            <h2><a href="Unit5.html" class="myButton">Unit5</h2>
+        </div>
+         <div class="card">
+            <h2><a href="Unit6.html" class="myButton">Unit6</h2>
+        </div>
+         <div class="card">
+            <h2><a href="Unit7.html" class="myButton">Unit7</h2>
+        </div>
+         <div class="card">
+            <h2><a href="Unit8.html" class="myButton">Unit8</h2>
+        </div>
+
+</html>
+<!--模态框结构-->
+<div id="myModal" class="modal">
+    <div class="modal - content">
+        <span class="close"></span>
+        <h2 id="modal - title">
+            <h2>
+                <p id="modal - description"></p>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // 关闭模态框逻辑
+        closeBtn.addEventListener('click', function () {
+            modal.style.display = 'none';
+        });
+    });
+</script>
+</body>
+
+</html>

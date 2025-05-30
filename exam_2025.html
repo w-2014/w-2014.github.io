@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>考纲</title>
+    <link rel="stylesheet" href="styles/password all.css">
+</head>
+<body>
+    <button class="back-to-home">≡ <a href="index.html">回到首页</a></button>
+    <button class="back-to-home_1">≡ <a href="exam_moer.html">回到目录</a></button>
+
+     <div class="main-container">
+        <h1 class="directory-title">考纲2025年版</h1>
+        <button class="directory-btn" data-dir="A" onclick="navigate('A')">英语</button>
+        <button class="directory-btn" data-dir="B" onclick="navigate('B')">数学</button>
+        <button class="directory-btn" data-dir="C" onclick="navigate('C')">电工电子技术·机械制图</button>
+    </div>
+
+    <script>
+        const DIRECTORY_LINKS = {
+            A: "exam_Eglish.html",
+            B: "exam_Math.html",
+            C: "exam_Electrical-and-Electronic-Technology-and-Mechanical-drawing.html",
+        };
+        function navigate(dir) {
+            window.location.href = DIRECTORY_LINKS[dir];
+        }
+    </script>
+</body>
+</html>

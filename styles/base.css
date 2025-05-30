@@ -1,0 +1,51 @@
+/* 对所有元素清零浏览器默认的内边距 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 大盒子 */
+#container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 网页的主体内容区 */
+#content {
+    margin-top: 5px;
+    padding: 15px;
+}
+
+/* 所有的超链接 */
+a {
+    text-decoration: none;
+    color: #383838;
+}
+
+/* 所有的ul */
+ul {
+    list-style-position: inside;
+}
+
+/* 所有需要左浮动的元素 */
+.pull-left {
+    float: left;
+}
+
+/* 所有需要右浮动的元素 */
+.pull-right {
+    float: right;
+}
+
+/* 所有需要清除浮动的元素 */
+.clear-fix {
+    overflow: hidden;
+}
+
+/* 整个网页 */
+body {
+    background-image: linear-gradient(to top, #5295F4, #5295f4);
+    background-repeat: repeat-x;
+    background-size: 100% 400px;
+}

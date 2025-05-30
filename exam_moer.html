@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>考纲</title>
+    <link rel="stylesheet" href="styles/password all.css">
+</head>
+<body>
+    <button class="back-to-home">≡ <a href="index.html">回到首页</a></button>
+
+     <div class="main-container">
+        <h1 class="directory-title">考纲目录</h1>
+        <button class="directory-btn" data-dir="A" onclick="navigate('A')">2025年</button>
+        <button class="directory-btn" data-dir="B" onclick="navigate('B')">2026年</button>
+    </div>
+
+    <script>
+        const DIRECTORY_LINKS = {
+            A: "exam_2025.html",
+            B: "exam_2025.html",
+        };
+        function navigate(dir) {
+            window.location.href = DIRECTORY_LINKS[dir];
+        }
+    </script>
+</body>
+</html>
