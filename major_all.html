@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可报专业</title>
+    <link rel="stylesheet" href="styles/password all.css">
+</head>
+
+<body>
+
+    <div class="nav-buttons">
+        <button class="nav-btn" onclick="location.href='index.html'">返回首页</button>
+        <button class="nav-btn" onclick="history.back()">返回上一页</button>
+    </div>
+
+    <div class="main-container">
+        <h1 class="directory-title">专业</h1>
+        <button class="directory-btn" data-dir="A" onclick="navigate('A')">机械工程</button>
+        <button class="directory-btn" data-dir="B" onclick="navigate('B')">机械设计制造及其自动化</button>
+        <button class="directory-btn" data-dir="C" onclick="navigate('C')">机械电子工程</button>
+        <button class="directory-btn" data-dir="D" onclick="navigate('D')">车辆工程</button>
+        <button class="directory-btn" data-dir="E" onclick="navigate('E')">汽车服务工程</button>
+        <button class="directory-btn" data-dir="F" onclick="navigate('F')">智能制造工程</button>
+        <button class="directory-btn" data-dir="G" onclick="navigate('G')">新能源汽车工程技术</button>
+        <button class="directory-btn" data-dir="H" onclick="navigate('H')">电气工程及其自动化</button>
+        <button class="directory-btn" data-dir="I" onclick="navigate('I')">自动化</button>
+        <button class="directory-btn" data-dir="J" onclick="navigate('J')">机器人工程</button>
+        <button class="directory-btn" data-dir="K" onclick="navigate('K')">交通运输</button>
+        <button class="directory-btn" data-dir="L" onclick="navigate('L')">工业工程</button>
+        <button class="directory-btn" data-dir="M" onclick="navigate('M')">质量管理工程</button>
+        <button class="directory-btn" data-dir="N" onclick="navigate('N')">机械设计制造及自动化</button>
+        <button class="directory-btn" data-dir="O" onclick="navigate('O')">智能制造工程技术</button>
+        <button class="directory-btn" data-dir="P" onclick="navigate('P')">工业设计</button>
+        <button class="directory-btn" data-dir="Q" onclick="navigate('Q')">电气工程及自动化</button>
+        <button class="directory-btn" data-dir="R" onclick="navigate('R')">智能控制技术</button>
+        <button class="directory-btn" data-dir="S" onclick="navigate('S')">机器人技术</button>
+        <button class="directory-btn" data-dir="T" onclick="navigate('T')">汽车工程技术</button>
+    </div>
+    <script>
+        const DIRECTORY_LINKS = {
+            A: "major_080201.html",
+            B: "major_080202.html",
+            C: "major_080204.html",
+            D: "major_080207.html",
+            E: "major_080208.html",
+            F: "major_080213T.html",
+            G: "major_080216T.html",
+            H: "major_080601.html",
+            I: "major_080801.html",
+            J: "major_080803T.html",
+            K: "major_081801.html",
+            L: "major_120701.html",
+            M: "major_120703T.html",
+            N: "major_260101.html",
+            O: "major_260102.html",
+            P: "major_260104.html",
+            Q: "major_260302.html",
+            R: "major_260303.html",
+            S: "major_260304.html",
+            T: "major_260701.html",
+        };
+        function navigate(dir) {
+            window.location.href = DIRECTORY_LINKS[dir];
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      background-color: white;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .basic-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .info-item {
+      width: 45%;
+      margin-bottom: 10px;
+      background-color: #eef;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .section h3 {
+      border-left: 5px solid #007BFF;
+      padding-left: 10px;
+    }
+
+    /* 按钮组样式 */
+    .nav-buttons {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #f8f8f8;
+      color: white;
+      padding: 12px 16px;
+      display: flex;
+      gap: 10px;
+      z-index: 1000;
+    }

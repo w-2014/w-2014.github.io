@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>顺序志愿解读</title>
+    <link rel="stylesheet" href="styles/volunteer.css">
+</head>
+
+<body>
+    <div class="nav-buttons">
+        <button class="nav-btn" onclick="location.href='index.html'">返回首页</button>
+        <button class="nav-btn" onclick="history.back()">返回上一页</button>
+    </div>
+
+    <div class="main-container">
+        <h1>顺序志愿解读</h1>
+
+        <div class="section">
+            <h2>投档原则</h2>
+            <ul class="list">
+                <li class="list-item">志愿优先：先处理所有考生第一志愿，再处理后续志愿</li>
+                <li class="list-item">高分优先：同一志愿类别中，按分数从高到低投档</li>
+                <li class="list-item">逐批检索：第一志愿录取结束后，再进行第二志愿投档</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>志愿结构</h2>
+            <ul class="list">
+                <li class="list-item">分梯度志愿：设第一志愿、第二志愿等（如1个第一志愿+2个参考志愿）</li>
+                <li class="list-item">单一院校志愿：每个志愿仅对应一所院校</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>填报核心逻辑</h2>
+            <ul class="list">
+                <li class="list-item">第一志愿冲刺：选择分数要求略高于自身成绩的理想院校</li>
+                <li class="list-item">后续志愿保底：选择往年生源不足或分数较低的院校</li>
+                <li class="list-item">避免志愿断层：各志愿之间分数差距不宜过大</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>投档流程示例</h2>
+            <ul class="list">
+                <li class="list-item">假设A校第一志愿计划招50人，投档比例1:1.2，系统先提取所有第一志愿报A校的考生</li>
+                <li class="list-item">按分数从高到低排序，前60名考生档案投给A校（50计划+20备选）</li>
+                <li class="list-item">未被A校录取的考生，进入第二志愿院校的投档流程</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>优势</h2>
+            <ul class="list">
+                <li class="list-item">突出志愿顺序：尊重考生第一选择，体现志愿优先原则</li>
+                <li class="list-item">适合特定院校：满足专业要求高、招生规模小的高校选拔需求</li>
+                <li class="list-item">程序透明：规则简单明确，易于考生理解</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>风险及应对</h2>
+            <ul class="list">
+                <li class="list-item">退档风险高：投档比例常为1:1.2，20%考生可能因专业不服从退档<br>→ 谨慎选择专业并勾选服从调剂</li>
+                <li class="list-item">落档风险大：第一志愿未录，后续志愿可能已录满<br>→ 第二志愿需选择“冷门”或常年缺额院校</li>
+                <li class="list-item">院校冷热不均：热门校分数扎堆，冷门校可能断档<br>→ 参考往年数据，避开过度热门院校</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

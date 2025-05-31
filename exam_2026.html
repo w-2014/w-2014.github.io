@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>考纲</title>
     <link rel="stylesheet" href="styles/password all.css">
 </head>
+
 <body>
-    <button class="back-to-home">≡ <a href="index.html">回到首页</a></button>
+    <div class="nav-buttons">
+        <button class="nav-btn" onclick="location.href='index.html'">返回首页</button>
+        <button class="nav-btn" onclick="history.back()">返回上一页</button>
+    </div>
     <button class="back-to-home_1">≡ <a href="exam_moer.html">回到目录</a></button>
 
-     <div class="main-container">
+    <div class="main-container">
         <h1 class="directory-title">考纲2026年版</h1>
         <button class="directory-btn" data-dir="A" onclick="navigate('A')">还没有</button>
         <button class="directory-btn" data-dir="B" onclick="navigate('B')">还没有</button>
@@ -30,4 +35,5 @@
         }
     </script>
 </body>
+
 </html>
